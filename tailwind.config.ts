@@ -61,13 +61,21 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        professionalBlue: {
+          medium: 'hsl(var(--professional-medium-blue))', // #0051B4
+          deep: 'hsl(var(--professional-deep-blue))',     // #003974
+          dark: 'hsl(var(--professional-dark-blue))'      // #001887
+        }
 			},
 			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				lg: 'var(--radius)', // 0.5rem (8px)
+				md: 'calc(var(--radius) - 2px)', // 6px
+				sm: 'calc(var(--radius) - 4px)'  // 4px
 			},
+      fontFamily: {
+        sans: ['var(--font-sans)', 'sans-serif'],
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
